@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Corentin Diehl">
+    <meta name="author" content="Amandine Bonnin">
+    <title>Qui sommes-nous</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style10.css" />
+    <link rel="icon" type="image/png" href="../media/images/questionnaire.png" />
+</head>
+
+<body id="nous">
+    <div class="titre">
+        <h1>
+            <span class="logo">&#x2708;</span>&nbsp;&nbsp;Eurotravel
+            <input class="bouton" type="button" value="S'incrire" onclick="popup();">
+            <input class="bouton" type="button" value="Connexion" onclick="popup();">
+        </h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../pages/index.html">Accueil</a></li>
+            <li><a href="../pages/page1.html">Carte de l'Europe</a></li>
+            <li><a href="../pages/page1.html">Destinations</a>
+                <ul class="sous">
+                    <li><a href="../pages/page5.html">Allemagne</a></li>
+                    <li><a href="../pages/page2.html">Angleterre</a></li>
+                    <li><a href="../pages/page4.html">France</a></li>
+                    <li><a href="../pages/page8.html">Gr&egrave;ce</a></li>
+                    <li><a href="../pages/page6.html">Italie</a></li>
+                    <li><a href="../pages/page7.html">Norv&egrave;ge</a></li>
+                    <li><a href="../pages/page3.html">Portugal</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/page9.html">Nous contacter</a></li>
+            <li><a href="../pages/page10.html">Qui sommes nous ?</a></li>
+        </ul>
+    </nav>
+    <div id="retour_suivant">
+        <input class="retour" type="button" value="&#x21BC; Retour" onclick="window.location.href='../pages/page9.html';"><br />
+    </div>
+    <fieldset>
+        <legend id="Q">Quelques informations sur nous </legend>
+        <div class="site">
+            <h2>Bienvenue sur notre projet Info1B Conception De Sites Web.</h2>
+            <p>Nous sommes deux &eacute;tudiants de l'universit&eacute; de Dijon &agrave; la facult&eacute; de Mirande, actuellements en L1 MIE. Nous avons choisis pour ce projet de vous pr&eacute;senter au plus ressembant possible un site d'agence de voyage.</p>
+            <p>Principalement port&eacute; sur l'Europe,</p>
+        </div>
+
+    </fieldset>
+    <br />
+    <div>Nous avons dessin&eacute; le logo en utilisant des courbes de B&eacute;ziers : <input type="button" value="LOGO" onclick="window.location.href='../pages/page11.html';"></div>
+    <br />
+    <br />
+    <footer>
+        <div class="news">Insrcrivez-vous pour recevoir des offres sp&eacute;ciales et des mises &agrave; jour. <br />
+            <input id="emailAddress" type="email" size="34" placeholder="nomutilisateur@beststartupever.com" onclick="popup();">
+        </div>
+        <div class="suivre">Suivez nous sur :</div>
+        <a href="https://www.facebook.com/"><img src="../media/images/facebook.jpg" alt="img_fb" class="rs" /></a>
+        <a href="https://twitter.com/login?lang=fr"><img src="../media/images/twitter.jpg" alt="img_tw" class="rs" /></a>
+        <a href="https://www.instagram.com/?hl=fr"><img src="../media/images/instagram.jpg " alt="img_ins" class="rs" /></a>
+        <div id="date"></div>
+        <div id="heure"></div>
+    </footer>
+    <script src="../javascript/date_heure.js"></script>
+
+
+</body>
+
+
+</html>

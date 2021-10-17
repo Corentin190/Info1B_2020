@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Corentin Diehl">
+    <meta name="author" content="Amandine Bonnin">
+    <title>L'Angleterre</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style2.css" />
+    <link rel="icon" type="image/png" href="../media/images/UK_flag.png" />
+</head>
+
+<body id="angleterre">
+    <div class="titre">
+        <h1><span class="logo">&#x2708;</span>&nbsp;&nbsp;Eurotravel
+            <input class="bouton" type="button" value="S'incrire" onclick="popup();">
+            <input class="bouton" type="button" value="Connexion" onclick="popup();">
+        </h1>
+    </div>
+    <nav>
+        <ul>
+
+            <li><a href="../pages/index.html">Accueil</a></li>
+            <li><a href="../pages/page1.html">Carte de l'Europe</a></li>
+            <li class="deroulant"><a href="../pages/page1.html">Destinations</a>
+                <ul class="sous">
+                    <li><a href="../pages/page5.html">Allemagne</a></li>
+                    <li><a href="../pages/page2.html">Angleterre</a></li>
+                    <li><a href="../pages/page4.html">France</a></li>
+                    <li><a href="../pages/page8.html">Gr&egrave;ce</a></li>
+                    <li><a href="../pages/page6.html">Italie</a></li>
+                    <li><a href="../pages/page7.html">Norv&egrave;ge</a></li>
+                    <li><a href="../pages/page3.html">Portugal</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/page9.html">Nous contacter</a></li>
+            <li><a href="../pages/page10.htmls">Qui sommes nous ?</a></li>
+        </ul>
+    </nav>
+
+
+    <h2>D&eacute;couvrez l’<a id="pays" href="https://www.gov.uk/">Angleterre</a> pour une vir&eacute;e culturelle ou un voyage en accord avec la nature !</h2>
+
+    <div id="retour_suivant">
+        <input class="retour" type="button" value="&#x21BC; Retour" onclick="window.location.href='../pages/page5.html';"><br />
+        <input class="retour" type="button" value="Suivant &#x21C0;" onclick="window.location.href='../pages/page4.html';">
+    </div>
+    <fieldset id="page">
+        <table>
+            <tr>
+                <td id="case1_gauche">
+                    <video id="vid" src="../media/video/zoom_angleterre.mp4" controls>Impossible de lire la vid&eacute;o</video>
+                </td>
+                <td id="case1_droite">
+                    <ul>
+                        <li class="points">Pays situ&eacute; au nord de l'Europe</li>
+                    </ul>
+                    <ul>
+                        <li class="points">Langue parl&eacute;e : l'anglais (english)</li>
+                    </ul>
+                    <ul>
+                        <li class="points">
+
+                            Voici la musique de l'hymne national anglais :
+                        </li>
+                    </ul>
+                    <div class="points"><audio id="audio" src="../media/son/hymne_uk.mp3" controls>Impossible de lire le fichier audio</audio></div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td id="case2_gauche">
+                    <img id="img_tamise" alt="image_tamise" src="../media/images/angleterre.JPG">
+                </td>
+                <td id="case2_droite">
+                    Bienvenue dans un des 4 pays des îles britanniques. <br /><br />Londres, sa capitale, situ&eacute;e sur la Tamise, fleuve au sud de l’Angleterre, abrite de c&eacute;l&egrave;bres monuments comme Big Ben, La Tour de Londres et d’autres
+                    tout aussi int&eacute;ressants comme <a onclick="tower();">The Tower Bridge</a>. <br />La reine d’Angleterre Elisabeth II r&eacute;side dans la capitale, dans le c&eacute;l&egrave;bre palais royal, Buckingham Palace. Une partie du
+                    palais est ouverte au public mais seulement l’&eacute;t&eacute;. Vous pourrez assister quotidiennement &agrave; la rel&egrave;ve de la garde qui a lieu &agrave; 10h45, pour une dur&eacute;e d’environ 45 minutes.
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td id="case3_gauche">
+                    L'Angleterre ne dispose pas seulement de Londres, d’autres grandes villes connues sous le nom de Manchester, Oxford ou bien Liverpool offrent &agrave; l'Angleterre une vaste &eacute;tendue d'aires urbaines. Pour ceux qui aiment les mus&eacute;es, le pays
+                    en regorge. Comme par exemple, situ&eacute; &agrave; Londres, The British Museum, ou bien le mus&eacute;e d’histoire naturelle. Votre s&eacute;jour vous permettra de pratiquer les savoirs et connaissances accumul&eacute;s depuis le
+                    d&eacute;but de l’apprentissage de la langue qui maintenant est &eacute;tudi&eacute;e depuis la primaire. Votre s&eacute;jour vous permettra de pratiquer et de perfectionner votre maitrise de la langue anglaise.
+
+                </td>
+                <td id="case3_droite">
+                    <img alt="img_reine" id="elisabeth" src="../media/images/Elisabeth_II.jpeg">
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td id="case4_gauche">
+                    <img alt="img_landscape" id="landscape" src="../media/images/angletterre_landscape.jpeg">
+                </td>
+                <td id="case4_droite">
+                    Nous n’oublions pas les amoureux de la nature, qui pourront profiter des beaux parcs nationaux pour une vir&eacute;e en montagne, dans des sentiers ou bien en escalades, ainsi que des somptueux paysages tels que Les falaises du South Dorset. Vous aurez
+                    l'occasion de goûter &agrave; la nourriture anglaise. Au c&eacute;l&egrave;bre fish and chips, à l’incontournable breakfast anglais, ainsi qu’aux traditionnels desserts comme le pudding.
+                </td>
+            </tr>
+        </table>
+
+    </fieldset>
+    <footer>
+        <div class="news">Insrcrivez-vous pour recevoir des offres sp&eacute;ciales et des mises &agrave; jour. <br />
+            <input id="emailAddress" type="email" size="34" placeholder="nomutilisateur@beststartupever.com" onclick="popup();">
+        </div>
+        <div class="suivre">Suivez nous sur :</div>
+        <a href="https://www.facebook.com/"><img src="../media/images/facebook.jpg" alt="img_fb" class="rs" /></a>
+        <a href="https://twitter.com/login?lang=fr"><img src="../media/images/twitter.jpg" alt="img_tw" class="rs" /></a>
+        <a href="https://www.instagram.com/?hl=fr"><img src="../media/images/instagram.jpg " alt="img_ins" class="rs" /></a>
+        <div id="date"></div>
+        <div id="heure"></div>
+    </footer>
+    <script src="../javascript/date_heure.js"></script>
+
+</body>
+
+</html>
+
+<!-- pr&eacute;sentation angleterre -->

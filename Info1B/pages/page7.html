@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Corentin Diehl">
+    <meta name="author" content="Amandine Bonnin">
+    <title>La Norv&egrave;ge</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style7.css" />
+    <link rel="icon" type="image/png" href="../media/images/norvege_flag.png" />
+</head>
+
+<body id="norvege">
+    <div class="titre">
+        <h1><span class="logo">&#x2708;</span>&nbsp;&nbsp;Eurotravel
+            <input class="bouton" type="button" value="S'incrire" onclick="popup();">
+            <input class="bouton" type="button" value="Connexion" onclick="popup();">
+        </h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../pages/index.html">Accueil</a></li>
+            <li><a href="../pages/page1.html">Carte de l'Europe</a></li>
+            <li class="deroulant"><a href="../pages/page1.html">Destinations</a>
+                <ul class="sous">
+                    <li><a href="../pages/page5.html">Allemagne</a></li>
+                    <li><a href="../pages/page2.html">Angleterre</a></li>
+                    <li><a href="../pages/page4.html">France</a></li>
+                    <li><a href="../pages/page8.html">Gr&egrave;ce</a></li>
+                    <li><a href="../pages/page6.html">Italie</a></li>
+                    <li><a href="../pages/page7.html">Norv&egrave;ge</a></li>
+                    <li><a href="../pages/page3.html">Portugal</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/page9.html">Nous contacter</a></li>
+            <li><a href="../pages/page10.html">Qui sommes nous ?</a></li>
+        </ul>
+    </nav>
+    <h2>Bienvenue dans <a id="pays" href="https://www.visitnorway.fr/">le pays des aurores bor&eacute;ales</a>.</h2>
+    <div id="retour_suivant">
+        <input class="retour" type="button" value="&#x21BC; Retour" onclick="window.location.href='../pages/page6.html';"><br />
+        <input class="retour" type="button" value="Suivant &#x21C0;" onclick="window.location.href='../pages/page3.html';">
+    </div>
+    <fieldset id="page">
+        <table>
+            <tr>
+                <td id="case1_gauche">
+                    <video id="vid" src="../media/video/zoom_norvege.mp4" controls>Impossible de lire la vid&eacute;o</video>
+                </td>
+                <td id="case1_droite">
+                    <ul>
+                        <li class="points">Pays situ&eacute; &agrave; au nord de l'Europe</li>
+                    </ul>
+                    <ul>
+                        <li class="points">Langue parl&eacute;e : le norv&eacute;gien (norsk)</li>
+                    </ul>
+                    <ul>
+                        <li class="points">
+
+                            Voici la musique de l'hymne national norv&eacute;gien :
+                        </li>
+                    </ul>
+                    <div class="points"><audio src="../media/son/hymne_norvege.mp3" controls>Impossible de lire le fichier audio</audio></div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td id="case2_gauche">
+                    La Norv&egrave;ge, pays scandinave, est la destination id&eacute;ale. Le pays a en effet une grande diversit&eacute; de paysages, que ce soit des forêts, des montagnes, des lacs, des prairies ou bien des collines au grand bonheur de vos yeux. <br
+                    />Vous aurez la possibilit&eacute; de vous balader dans les nombreux sentiers de randonn&eacute;e ou bien visiter de nombreux monuments historiques ou encore des sites class&eacute;s.
+                </td>
+                <td id="case2_droite">
+                    <img alt="img_bereales" id="boreales" src="../media/images/boreales.jpeg">
+                </td>
+            </tr>
+            <tr>
+                <td id="case3_gauche">
+                    <img alt="img_hardangervidda" id="hardangervidda" src="../media/images/hardangervidda.jpg">
+                </td>
+                <td id="case3_droite">
+                    Le pays regorge de paysages à couper le souffle, nous allons vous donner un petit avant goût. D&eacute;couvrez le parc du Hardangervidda, <a onclick="parc();">le plus grand parc du pays</a>. Situ&eacute; au sud, ses montagnes, ses
+                    lacs bleus et ses glaciers, lui offrent de splendides paysages. D&eacute;couvrez &eacute;galement la falaise de Preikestolen &eacute;lev&eacute;e à plus de 600 m&egrave;tres au-dessus des eaux, 2 petites heures de marche pour atteindre
+                    le sommet et vous b&eacute;n&eacute;ficierez d’une magnifique vue.
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td id="case4_gauche">
+                    <img alt="img_temp" id="temp" src="../media/images/thermometre.png">
+                </td>
+                <td id="case4_droite">
+                    Le pays connaît des saisons plutôt bien marqu&eacute;es avec des hivers tr&egrave;s froids, la temp&eacute;rature peut parfois atteindre les -40°, et des &eacute;t&eacute;s assez chauds avec des temp&eacute;ratures montant jusqu’à 30°. Un climat id&eacute;al
+                    pour des sorties hivernales au ski ou bien des sorties estivales pour une petite baignade dans les nombreux lacs qu’offre le pays
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td id="case5_gauche">
+                    Vous souhaitez voir les aurores bor&eacute;ales ? Pour cela, il est pr&eacute;f&eacute;rable de voyager en Norv&egrave;ge sur la p&eacute;riode de septembre à mars. Rendez-vous en fin d'apr&egrave;s-midi ou d&eacute;but de matin&eacute;e, c’est le meilleur
+                    moment pour les admirer.
+                    <br />La cuisine norv&eacute;gienne est assez bas&eacute;e sur les produits provenant de la mer, ce qui ne vous surprend pas, comme par exemple le saumon fum&eacute; qui est un des seuls mets de la Norv&egrave;ge à avoir &eacute;t&eacute;
+                    autant export&eacute;. Pour les amateurs de gibiers, vous pourrez retrouver de d&eacute;licieux plats tels que de l’&eacute;lan, rennes ou bien canard. Pour les plus gourmands, quoi de mieux qu’une bonne <a onclick="omelette();">omelette norv&eacute;gienne</a>.
+                </td>
+                <td id="case5_droite">
+                    <img alt="img_omelette" id="omelette" src="../media/images/omelette_norvegienne.jpg">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <footer>
+        <div class="news">Insrcrivez-vous pour recevoir des offres sp&eacute;ciales et des mises &agrave; jour. <br />
+            <input id="emailAddress" type="email" size="34" placeholder="nomutilisateur@beststartupever.com" onclick="popup();">
+        </div>
+        <div class="suivre">Suivez nous sur :</div>
+        <a href="https://www.facebook.com/"><img src="../media/images/facebook.jpg" alt="img_fb" class="rs" /></a>
+        <a href="https://twitter.com/login?lang=fr"><img src="../media/images/twitter.jpg" alt="img_tw" class="rs" /></a>
+        <a href="https://www.instagram.com/?hl=fr"><img src="../media/images/instagram.jpg " alt="img_ins" class="rs" /></a>
+        <div id="date"></div>
+        <div id="heure"></div>
+    </footer>
+    <script src="../javascript/date_heure.js"></script>
+
+</body>
+
+</html>
+
+<!-- pr&eacute;sentation norv&egrave;ge -->

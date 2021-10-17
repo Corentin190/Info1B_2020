@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Corentin Diehl">
+    <meta name="author" content="Amandine Bonnin">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style9.css" />
+    <link rel="icon" type="image/png" href="../media/images/questionnaire.png" />
+</head>
+
+
+<body id="questionnaire">
+    <div class="titre">
+        <h1><span class="logo">&#x2708;</span>&nbsp;&nbsp;Eurotravel
+            <input class="bouton" type="button" value="S'incrire" onclick="popup();">
+            <input class="bouton" type="button" value="Connexion" onclick="popup();">
+        </h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../pages/index.html">Accueil</a></li>
+            <li><a href="../pages/page1.html">Carte de l'Europe</a></li>
+            <li><a href="../pages/page1.html">Destinations</a>
+                <ul class="sous">
+                    <li><a href="../pages/page5.html">Allemagne</a></li>
+                    <li><a href="../pages/page2.html">Angleterre</a></li>
+                    <li><a href="../pages/page4.html">France</a></li>
+                    <li><a href="../pages/page8.html">Gr&egrave;ce</a></li>
+                    <li><a href="../pages/page6.html">Italie</a></li>
+                    <li><a href="../pages/page7.html">Norv&egrave;ge</a></li>
+                    <li><a href="../pages/page3.html">Portugal</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/page9.html">Nous contacter</a></li>
+            <li><a href="../pages/page10.html">Qui sommes nous ?</a></li>
+        </ul>
+    </nav>
+    <h2>Quelques informations suppl&eacute;mentaires pour votre s&eacute;jour</h2>
+    <div id="retour_suivant">
+        <input class="retour" type="button" value="&#x21BC; Retour" onclick="window.location.href='../pages/page1.html';"><br />
+        <input class="retour" type="button" value="Suivant &#x21C0;" onclick="window.location.href='../pages/page10.html';">
+    </div>
+    <fieldset id="page">
+        <form method="post" action="mailto:corentin.diehl@gmail.fr">
+            <fieldset>
+                <ul>
+                    <li class="q">Alors, pour quel pays avez-vous craqu&eacute; ?</li>
+                </ul>
+                &emsp;&nbsp;<input type="radio" name="pays" value="allemagne"><a class="pays" href="../pages/page5.html">&emsp;Allemagne</a> <br /> &emsp;
+                <input type="radio" name="pays" value="angleterre"><a class="pays" href="../pages/page2.html">&emsp;Angleterre</a> <br /> &emsp;
+                <input type="radio" name="pays" value="france"><a class="pays" href="../pages/page4.html">&emsp;France</a> <br /> &emsp;
+                <input type="radio" name="pays" value="grece"><a class="pays" href="../pages/page8.html">&emsp;Gr&egrave;ce</a> <br /> &emsp;
+                <input type="radio" name="pays" value="italie"><a class="pays" href="../pages/page6.html">&emsp;Italie</a> <br /> &emsp;
+                <input type="radio" name="pays" value="norvege"><a class="pays" href="../pages/page7.html">&emsp;Norv&egrave;ge</a> <br /> &emsp;
+                <input type="radio" name="pays" value="portugal"><a class="pays" href="../pages/page3.html">&emsp;Portugal</a> <br /> &emsp;
+                <input type="radio" name="pays" value="autre">&emsp;Autre :
+                <input type="text" name="autre_pays" />
+                <ul>
+                    <li class="q">
+                        Dites-nous en plus sur vous :
+                    </li>
+                </ul>
+                <p>
+                    &emsp;<label>Nom :
+        <input type="text" placeholder="NOM" name="nom" required pattern="[A-Z -]+"/></label> &emsp;
+                    <label>Pr&eacute;nom :
+        <input type="text" placeholder="Pr&eacute;nom" name="prenom" required pattern="[A-Z][a-zA-Z&agrave;-ÿ -]+"/></label>
+                </p>
+                &emsp;<label>Num&eacute;ro de t&eacute;l&eacute;phone :
+        <input type="text" placeholder="06 XX XX XX XX" name="telephone" required pattern="[0-9]{2}[ ][0-9]{2}[ ][0-9]{2}[ ][0-9]{2}[ ][0-9]{2}"/></label> &emsp;
+                <label>Adresse e-mail :
+        <input id="mail" placeholder="me@example.com" type="email" name="nom" required/></label>
+                <ul>
+                    <li class="q">Combien de personne(s) voyage(ent) ? </li>
+                </ul>
+                <p>
+                    &emsp;<select name="nb_adultes">
+            <optgroup label="Nombre d'adulte(s)">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5 et +</option>
+            </optgroup>
+        </select> &emsp;
+                    <select name="nb_enfants">
+            <optgroup label="Nombre d'enfant(s)">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5et+">5 et +</option>
+            </optgroup>
+        </select>
+                </p>
+                <ul>
+                    <li class="q">Souhaitez-vous voyager avec des animaux ? Si oui, quel(s) animal(aux) et combien ? </li>
+                </ul>
+                <p>
+                    &emsp;<input type="radio" name="animal" value="oui" onclick="afficher('visible');" checked="checked">Oui &emsp;
+                    <input type="radio" name="animal" value="non" onclick="afficher('hidden');">Non
+                </p>
+                <!-- menu choix animaux et nb -->
+                <p id="champ">
+                    &emsp;<select name="pet">
+            <optgroup label="S&eacute;lectionnez un animal">
+                <option value="chien">Chien</option>
+                <option value="chat">Chat</option>
+                <option value="oiseau">Oiseau</option>
+                <option value="autre">Autre</option>
+            </optgroup> 
+        </select>
+                    <select name="nb_animaux">
+            <optgroup label="Choisissez un nombre">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3et+">3 et +</option>
+            </optgroup>
+        </select>
+                </p>
+                <ul>
+                    <li class="q">Comment souhaitez-vous voyager ?</li>
+                </ul>
+                <p>
+                    &emsp;<select name="vehicule">
+            <optgroup label="Choisissez un moyen de transport">
+                <option value="voiture">Voiture</option>
+                <option value="train">Train</option>
+                <option value="avion">Avion</option>
+                <option value="bateau">Bateau</option>
+            </optgroup>
+        </select>
+                </p>
+                <ul>
+                    <li class="q">Où souhaitez-vous loger ?</li>
+                </ul>
+                <p>
+                    &emsp;<select name="logement">
+            <optgroup label="Choisissez un logement">
+                <option value="maison">Maison</option>
+                <option value="appartement">Appartement</option>
+                <option value="hotel">Hôtel</option>
+            </optgroup>
+        </select>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend class="Q">Pourriez-vous nous parler d'avantage de votre souhait en quelques lignes ? Avez-vous d'autres pr&eacute;cisions &agrave; nous apporter ?</legend>
+
+                <textarea id="plus" name="pluq" rows="10" cols="100"> </textarea>
+
+            </fieldset>
+            <div id="boutons">
+                <br />
+                <input type="reset" class="btn" value="Recommencer" />
+                <input type="submit" class="btn" value="Envoyer" />
+            </div>
+        </form>
+    </fieldset>
+    <span id="date_heure"></span>
+
+
+
+    <footer>
+        <div class="news">Insrcrivez-vous pour recevoir des offres sp&eacute;ciales et des mises &agrave; jour. <br />
+            <input id="emailAddress" type="email" size="34" placeholder="nomutilisateur@beststartupever.com" onclick="popup();">
+        </div>
+        <div class="suivre">Suivez nous sur :</div>
+        <a href="https://www.facebook.com/"><img src="../media/images/facebook.jpg" alt="img_fb" class="rs" /></a>
+        <a href="https://twitter.com/login?lang=fr"><img src="../media/images/twitter.jpg" alt="img_tw" class="rs" /></a>
+        <a href="https://www.instagram.com/?hl=fr"><img src="../media/images/instagram.jpg " alt="img_ins" class="rs" /></a>
+        <div id="date"></div>
+        <div id="heure"></div>
+    </footer>
+    <script src="../javascript/page9.js"></script>
+    <script src="../javascript/date_heure.js"></script>
+
+</body>
+
+</html>

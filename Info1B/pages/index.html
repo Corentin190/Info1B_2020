@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Corentin Diehl">
+    <meta name="author" content="Amandine Bonnin">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="../styles/stylesindex.css" />
+    <link rel="icon" type="image/png" href="../media/images/eurotravel_logo.png" />
+</head>
+
+
+
+
+<body id="accueil">
+    <div class="titre">
+        <h1><span class="logo">&#x2708;</span>&nbsp;&nbsp;Eurotravel
+            <input class="bouton" type="button" value="S'incrire" onclick="popup();">
+            <input class="bouton" type="button" value="Connexion" onclick="popup();">
+
+        </h1>
+
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../pages/index.html">Accueil</a></li>
+            <li><a href="../pages/page1.html">Carte de l'Europe</a></li>
+            <li><a href="../pages/page1.html">Destinations</a>
+                <ul class="sous">
+                    <li><a href="../pages/page5.html">Allemagne</a></li>
+                    <li><a href="../pages/page2.html">Angleterre</a></li>
+                    <li><a href="../pages/page4.html">France</a></li>
+                    <li><a href="../pages/page8.html">Gr&egrave;ce</a></li>
+                    <li><a href="../pages/page6.html">Italie</a></li>
+                    <li><a href="../pages/page7.html">Norv&egrave;ge</a></li>
+                    <li><a href="../pages/page3.html">Portugal</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/page9.html">Nous contacter</a></li>
+            <li><a href="../pages/page10.html">Qui sommes nous ?</a></li>
+        </ul>
+    </nav>
+
+    <section id="haut">
+        <div class="ok"></div>
+        <h2>Bienvenue sur votre agence de voyage <br>Eurotravel !</h2>
+        <h3>Suivez nous, on vous emm&egrave;ne</h3>
+        <button onclick="window.location.href ='../pages/page1.html';" id="recherche">Rechercher votre voyage</button>
+    </section>
+    <br>
+    <h4> Nous allons du mieux possible r&eacute;pondre &agrave; vos demandes, pour que vous puissez passer des vacances en toute s&eacute;r&eacute;nit&eacute; !</h4>
+    <footer>
+        <div class="news">Insrcrivez-vous pour recevoir des offres sp&eacute;ciales et des mises &agrave; jour. <br />
+            <input id="emailAddress" type="email" size="34" placeholder="nomutilisateur@beststartupever.com" onclick="popup();">
+        </div>
+        <div class="suivre">Suivez nous sur :</div>
+        <a href="https://www.facebook.com/"><img src="../media/images/facebook.jpg" alt="img_fb" class="rs" /></a>
+        <a href="https://twitter.com/login?lang=fr"><img src="../media/images/twitter.jpg" alt="img_tw" class="rs" /></a>
+        <a href="https://www.instagram.com/?hl=fr"><img src="../media/images/instagram.jpg " alt="img_ins" class="rs" /></a>
+        <div id="date"></div>
+        <div id="heure"></div>
+    </footer>
+    <script src="../javascript/date_heure.js"></script>
+
+</body>
+
+
+
+</html>

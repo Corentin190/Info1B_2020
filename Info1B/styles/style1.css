@@ -1,0 +1,177 @@
+#carte {
+    background-color: #DADBDD;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav {
+    background-color: white;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(255, 166, 0);
+    border-color: gold;
+}
+
+.sous {
+    display: none;
+    box-shadow: 1px 1px gold;
+    background-color: white;
+    position: absolute;
+    width: 85%;
+    z-index: 2;
+}
+
+nav ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: gold;
+}
+
+#page {
+    margin-left: 7%;
+    margin-right: 7%;
+    border: 0px;
+}
+
+#retour_suivant {
+    position: absolute;
+    line-height: 150%;
+}
+
+.retour {
+    width: 100px;
+    padding: 2px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    background-color: orange;
+}
+
+.retour:hover {
+    background-color: #DADBDD;
+    color: orange;
+    cursor: pointer;
+}
+
+h1 {
+    margin-left: 100px;
+    text-decoration: dashed;
+    font-family: "Crete Round", serif;
+    font-size: 40px;
+}
+
+.bouton {
+    background: orange;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    width: auto;
+}
+
+.bouton:hover {
+    background-color: #DADBDD;
+    color: orange;
+}
+
+.logo {
+    color: orange;
+    font-size: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    float: left;
+    line-height: 150%;
+}
+
+td {
+    padding: 7px;
+    text-align: center;
+}
+
+.colonne1 {
+    width: 10%;
+}
+
+.colonne2 {
+    width: 15%;
+}
+
+.colonne3 {
+    width: 25%;
+}
+
+.ligne {
+    border-bottom: 1px solid orange;
+}
+
+.btn {
+    width: 150px;
+}
+
+thead {
+    background-color: lightgrey;
+    border-bottom: 4px solid orange;
+}
+
+tfoot {
+    background-color: lightgrey;
+    border-top: 4px solid orange;
+    font-style: italic;
+}
+
+#europe {
+    float: right;
+    width: 43%;
+}
+
+footer {
+    border-style: solid;
+    width: 100%;
+    border: 2px solid grey;
+    text-align: center;
+    line-height: 150%;
+    font-family: "Crete Round", serif;
+}
+
+.rs {
+    width: 40px;
+    height: 40px;
+}

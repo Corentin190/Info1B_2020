@@ -1,0 +1,263 @@
+#norvege {
+    background-color: #DADBDD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: white;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(255, 166, 0);
+    border-color: gold;
+}
+
+.sous {
+    display: none;
+    box-shadow: 1px 1px gold;
+    background-color: white;
+    position: absolute;
+    width: 85%;
+    z-index: 2;
+}
+
+nav ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: gold;
+}
+
+h1 {
+    margin-left: 100px;
+    text-decoration: dashed;
+    font-family: "Crete Round", serif;
+    font-size: 40px;
+}
+
+.bouton {
+    background: orange;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.bouton:hover {
+    background-color: #DADBDD;
+    color: orange;
+}
+
+#pays {
+    outline: none;
+    text-decoration: none;
+}
+
+#retour_suivant {
+    position: absolute;
+    line-height: 150%;
+}
+
+.logo {
+    color: orange;
+    font-size: 50px;
+}
+
+#pays:link {
+    color: grey;
+}
+
+#pays:visited {
+    color: black;
+}
+
+#pays:hover {
+    border-bottom: 1px solid;
+    color: orange;
+    cursor: pointer;
+}
+
+#page {
+    margin-left: 7%;
+    margin-right: 7%;
+    border: 0px;
+}
+
+#retour_suivant {
+    position: absolute;
+    line-height: 150%;
+}
+
+.retour {
+    width: 100px;
+    padding: 2px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    background-color: orange;
+}
+
+.retour:hover {
+    background-color: #DADBDD;
+    color: orange;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#case1_gauche {
+    width: 50%;
+    padding-right: 5px;
+}
+
+#vid {
+    width: 100%;
+}
+
+#case1_droite {
+    width: 50%;
+    border-left: 4px orange solid;
+}
+
+.points {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+#case2_gauche {
+    width: 50%;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
+    padding-right: 10px;
+    padding-top: 5px;
+    border-top: 4px solid orange;
+}
+
+#case2_droite {
+    width: 50%;
+    padding-top: 5px;
+    border-top: 4px solid orange;
+}
+
+#boreales {
+    width: 100%;
+}
+
+#case3_gauche {
+    width: 50%;
+    padding-top: 5px;
+    border-top: 4px solid orange;
+}
+
+#hardangervidda {
+    width: 100%;
+}
+
+#case3_droite {
+    width: 50%;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-top: 4px solid orange;
+}
+
+#case4_gauche {
+    width: 8%;
+    padding-top: 5px;
+    border-top: 4px solid orange;
+}
+
+#temp {
+    width: 100%;
+}
+
+#case4_droite {
+    width: 92%;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-top: 4px solid orange;
+}
+
+#case5_gauche {
+    width: 50%;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
+    padding-right: 10px;
+    padding-top: 5px;
+    border-top: 4px solid orange;
+}
+
+#case5_droite {
+    width: 50%;
+    padding-top: 5px;
+    border-top: 4px solid orange;
+}
+
+#omelette {
+    width: 100%;
+}
+
+footer {
+    border-style: solid;
+    width: 100%;
+    border: 2px solid grey;
+    text-align: center;
+    line-height: 150%;
+    font-family: "Crete Round", serif;
+}
+
+.rs {
+    width: 40px;
+    height: 40px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+}

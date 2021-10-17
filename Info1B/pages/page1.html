@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Corentin Diehl">
+    <meta name="author" content="Amandine Bonnin">
+    <title>Les pays pr&eacute;sent&eacute;s</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style1.css" />
+    <link rel="icon" type="image/png" href="../media/images/europe_flag.png" />
+</head>
+
+<body id="carte">
+    <div class="titre">
+        <h1><span class="logo">&#x2708;</span>&nbsp;&nbsp;Eurotravel
+            <input class="bouton" type="button" value="S'incrire" onclick="popup();">
+            <input class="bouton" type="button" value="Connexion" onclick="popup();">
+        </h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../pages/index.html">Accueil</a></li>
+            <li><a href="../pages/page1.html">Carte de l'Europe</a></li>
+            <li class="deroulant"><a href="#pays">Destinations</a>
+                <ul class="sous">
+                    <li><a href="../pages/page5.html">Allemagne</a></li>
+                    <li><a href="../pages/page2.html">Angleterre</a></li>
+                    <li><a href="../pages/page4.html">France</a></li>
+                    <li><a href="../pages/page8.html">Gr&egrave;ce</a></li>
+                    <li><a href="../pages/page6.html">Italie</a></li>
+                    <li><a href="../pages/page7.html">Norv&egrave;ge</a></li>
+                    <li><a href="../pages/page3.html">Portugal</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/page9.html">Nous contacter</a></li>
+            <li><a href="../pages/page10.html">Qui sommes nous ?</a></li>
+        </ul>
+    </nav>
+    <h2>L'Europe sur le globe</h2>
+    <div id="retour_suivant">
+        <input class="retour" type="button" value="&#x21BC; Retour" onclick="window.location.href='../pages/index.html';"><br />
+        <input class="retour" type="button" value="Suivant &#x21C0;" onclick="window.location.href='../pages/page5.html';">
+    </div>
+    <fieldset id="page">
+        <table>
+            <thead>
+                <tr>
+                    <td>Destinations</td>
+                    <td colspan="2">Temp&eacute;rature moyenne de la capitale au mois de juillet (moyenne entre la nuit et le jour)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="ligne">
+                    <td class="colonne1"><input class="btn" type="button" value="Allemagne" onclick="window.location.href='../pages/page5.html';" /></td>
+                    <td class="colonne2">Berlin<br>19°C</td>
+                    <td class="colonne3">D&eacute;couvrez l'Allemagne pour une vir&eacute;e culturelle ou un voyage en accord avec la nature.
+                    </td>
+                </tr>
+                <tr class="ligne">
+                    <td class="colonne1"><input class="btn" type="button" value="Angleterre" onclick="window.location.href='../pages/page2.html';" /></td>
+                    <td class="colonne2">Londres<br>18,8°C</td>
+                    <td class="colonne3">D&eacute;couvrez l’Angleterre pour une vir&eacute;e culturelle ou un voyage en accord avec la nature !
+                    </td>
+
+
+                </tr>
+                <tr class="ligne">
+                    <td class="colonne1"><input class="btn" type="button" value="France" onclick="window.location.href='../pages/page4.html';" /></td>
+                    <td class="colonne2">Paris<br />19,4°C</td>
+                    <td class="colonne3">Et oui, vous pouvez aussi voyager en France. Et si vous vous laissiez surprendre par ce que vous côtoyez chaque jour ?
+                    </td>
+                </tr>
+                <tr class="ligne">
+                    <td class="colonne1"><input class="btn" type="button" value="Gr&egrave;ce" onclick="window.location.href='../pages/page8.html';" /></td>
+                    <td class="colonne2">Ath&egrave;nes<br />27,9°C</td>
+                    <td class="colonne3">Bienvenue en Gr&egrave;ce, pays des temples et des dieux.
+                    </td>
+
+                </tr>
+                <tr class="ligne">
+                    <td class="colonne1"><input class="btn" type="button" value="Italie" onclick="window.location.href='../pages/page6.html';" /></td>
+                    <td class="colonne2">Rôme<br />24,4°C</td>
+                    <td class="colonne3">Votre prochain voyage dans la botte italienne se pr&eacute;pare ici.</td>
+                </tr>
+                <tr class="ligne">
+                    <td class="colonne1"><input class="btn" type="button" value="Norv&egrave;ge" onclick="window.location.href='../pages/page7.html';" /></td>
+                    <td class="colonne2">Oslo<br />17,1°C</td>
+                    <td class="colonne3">Bienvenue dans le pays des aurores bor&eacute;ales.</td>
+                </tr>
+                <tr>
+                    <td class="colonne1"><input class="btn" type="button" value="Portugal" onclick="window.location.href='../pages/page3.html';" /></td>
+                    <td class="colonne2">Lisbonne<br />22,7°C</td>
+                    <td class="colonne3">Bienvenue au Portugal, le plus vieux pays d’Europe et le plus fascinant.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        Cliquez sur le nom des pays pour plus d'informations.
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <a href="https://europa.eu/european-union/index_fr"><img alt="img_europe" id="europe" src="../media/images/europe_world.png"></a>
+    </fieldset>
+    <footer>
+        <div class="news">Insrcrivez-vous pour recevoir des offres sp&eacute;ciales et des mises &agrave; jour. <br />
+            <input id="emailAddress" type="email" size="34" placeholder="nomutilisateur@beststartupever.com" onclick="popup();">
+        </div>
+        <div class="suivre">Suivez nous sur :</div>
+        <a href="https://www.facebook.com/"><img src="../media/images/facebook.jpg" alt="img_fb" class="rs" /></a>
+        <a href="https://twitter.com/login?lang=fr"><img src="../media/images/twitter.jpg" alt="img_tw" class="rs" /></a>
+        <a href="https://www.instagram.com/?hl=fr"><img src="../media/images/instagram.jpg " alt="img_ins" class="rs" /></a>
+        <div id="date"></div>
+        <div id="heure"></div>
+    </footer>
+    <script src="../javascript/date_heure.js"></script>
+
+</body>
+
+</html>
